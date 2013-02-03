@@ -7,7 +7,7 @@ Use these scripts at your own risk!
 
 To install the config:
 ----------------------
-    curl https://github.com/chpill/dotfiles/raw/master/install.sh
+    curl -L https://github.com/chpill/dotfiles/raw/master/install.sh | sh
 
 
 
