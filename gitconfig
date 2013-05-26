@@ -149,3 +149,5 @@
 [user]
   name = chpill
   email = etienne@spillemaeker.com
+[rebase]
+  stat = true
