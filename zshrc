@@ -46,3 +46,5 @@ export COFFEELINT_CONFIG=$HOME/dotfiles/coffeelint_config.json
 # working with ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="$HOME/vendor/elixir/bin:$PATH"
+export PATH="$HOME/vendor/elixir/bin:$PATH"
