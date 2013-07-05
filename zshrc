@@ -10,7 +10,7 @@ ZSH_THEME="funky"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias l="l -h"
+alias l="ls -alh"
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage"'
 
 # Set to this to use case-sensitive completion
