@@ -80,6 +80,7 @@
   ; git svn
   svpull = !git-svn fetch && git-svn rebase
   svpush = !git-svn dcommit
+	gnap = 'git add . -N && git add --patch'
 
 ;[apply]
   ;whitespace = nowarn
