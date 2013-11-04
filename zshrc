@@ -48,3 +48,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/vendor/elixir/bin:$PATH"
 export PATH="$HOME/vendor/elixir/bin:$PATH"
+
+# to have npm work properly
+export PATH="$HOME/.node/bin:$PATH"
