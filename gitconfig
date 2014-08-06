@@ -151,6 +151,8 @@
   name = chpill
   email = etienne@spillemaeker.com
 [commit]
-    template = /home/chpill/dotfiles/.git-commit-template
+  template = /home/chpill/dotfiles/git-commit-template
 [rebase]
   stat = true
+[web]
+  browser = google-chrome
