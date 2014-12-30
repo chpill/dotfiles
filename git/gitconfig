@@ -127,7 +127,7 @@
 [core]
   editor = vim
   pager  = less -FRSX
-  excludesfile = ~/.mydotfiles/gitexcludes
+  excludesfile = ~/dotfiles/git/gitignore_global
 
 [push]
   default = tracking
@@ -147,12 +147,16 @@
 [url "git://github.com/"]
   # Read-only
   insteadOf = gh:
+
 [user]
   name = chpill
   email = etienne@spillemaeker.com
+
 [commit]
-  template = /home/chpill/dotfiles/git-commit-template
+  template = /home/chpill/dotfiles/git/git-commit-template
+
 [rebase]
   stat = true
+
 [web]
   browser = google-chrome
