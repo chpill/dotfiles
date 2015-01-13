@@ -7,13 +7,6 @@ ZSH=$HOME/dotfiles/oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="funky"
 
-# Aliases
-alias l="ls -alh"
-alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage"'
-
-alias e='emacsclient -nw'
-alias killemacs="emacsclient -e \"(progn (setq kill-emacs-hook 'nil) (kill-emacs))\""
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -40,6 +33,16 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+#
+# Aliases
+alias l="ls -alh"
+alias ll="ls -alh"
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage"'
+
+alias e='emacsclient -nw'
+alias killemacs="emacsclient -e \"(progn (setq kill-emacs-hook 'nil) (kill-emacs))\""
+
+# PATH
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 
 export COFFEELINT_CONFIG=$HOME/dotfiles/coffeelint_config.json
