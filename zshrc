@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+ZSH=$HOME/dotfiles/oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -7,11 +7,12 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="funky"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Aliases
 alias l="ls -alh"
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage"'
+
+alias e='emacsclient -nw'
+alias killemacs="emacsclient -e \"(progn (setq kill-emacs-hook 'nil) (kill-emacs))\""
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -43,11 +44,18 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 
 export COFFEELINT_CONFIG=$HOME/dotfiles/coffeelint_config.json
 
-# working with ruby
+# Ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+# Elixir
 export PATH="$HOME/vendor/elixir/bin:$PATH"
 export PATH="$HOME/vendor/elixir/bin:$PATH"
 
-# to have npm work properly
-export PATH="$HOME/.node/bin:$PATH"
+# Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$HOME/go/bin
+
+# Node
+export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/home/chpill/lib/node_modules
+source ~/.nvm/nvm.sh

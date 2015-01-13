@@ -2,21 +2,19 @@ dotfiles
 ========
 
 Config files and installations scripts for my config.
-
 Use these scripts at your own risk!
 
-To install the config:
----------------------
-(this currently doesn't work...)
+Install
+-------
 
-    curl -L https://github.com/chpill/dotfiles/raw/master/install.sh | sh
+Clone the repo in `~/dotfiles`, then
 
-TODO:
------
-- finding a way of using curl inside the install script (haxx.curl -> curl scripting?)
-- adding an automated custom install of oh-my-zsh inside the dotfiles directory
-- adding more config files...
+```
+cd dotfiles
+git submodule update --init --recursive
+sudo apt-get -y install $(cat package_list)
+sh tools/create_links.sh
+```
 
-
-
-
+Note that because of the `--init` options, submodules already initialized won't
+be updated.

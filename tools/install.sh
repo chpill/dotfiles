@@ -1,16 +1,10 @@
-# Script that install all the config, calling scripts from other submodules at times
-# Some install scripts are replaced
-# The only prerequisite is curl
-
-# Getting vim configuration
-echo "\033[0;34mGetting vim configuration"
-curl -L https://github.com/chpill/vimfiles/raw/master/tools/install.sh | sh
-
-#
-
-
+echo "\033[0;34mCreating symbolic links"
 # Creating all the symbolic links necessary
-ln -s ~/dotfiles/vimfiles/vimrc ~/.vimrc
-ln -s ~/dotfiles/vimfiles ~/.vim
+ln -s $HOME/dotfiles/zshrc $HOME/.zshrc
 
-ln -s ~/dotfiles/gitconfig ~/.gitconfig
+ln -s $HOME/dotfiles/vimfiles/vimrc $HOME/.vimrc
+ln -s $HOME/dotfiles/vimfiles $HOME/.vim
+
+ln -s $HOME/dotfiles/gitconfig $HOME/.gitconfig
+
+ln -s $HOME/dotfiles/emacs.d $HOME/.emacs.d
