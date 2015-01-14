@@ -39,7 +39,9 @@ alias l="ls -alh"
 alias ll="ls -alh"
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep -E "percentage"'
 
-alias e='emacsclient -nw'
+alias e='emacsclient --tty\
+                     --create-frame'
+
 alias killemacs="emacsclient -e \"(progn (setq kill-emacs-hook 'nil) (kill-emacs))\""
 
 # PATH
