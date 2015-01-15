@@ -7,3 +7,6 @@
 [submodule "emacs.d"]
 	path = emacs.d
 	url = https://github.com/chpill/dot-emacs.git
+[submodule "tools/xcape"]
+	path = tools/xcape
+	url = https://github.com/alols/xcape
