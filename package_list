@@ -1,13 +1,50 @@
-awesome
-rxvt-unicode
-slock
-curl
-htop
-git
+# text editing
 vim
-ack-grep
-tree
+par
+emacs
+
+# text processors
+pandoc
+
+# dev
+git
+gitk
+build-essential
+postrgresql-9.3
+phantomjs
 nginx
+redis-server
+
+# base
+awesome
+alsa-base
+gnome-settings-daemon
 zsh
-silversearcher-ag
+
+# to check / edit system configuration
+arandr
+htop
+nmap
+wicd
+alsa-utils
+
+# printer & scanners
+cups
+hplip
+
+# others
+firefox
+rxvt-unicode
+google-chrome-beta
+pidgin
+
+# cli goodies
+imagemagick
+tree
+cowsay
+curl
 jq
+suckless-tools
+silversearcher-ag
+sshfs
+tmux
