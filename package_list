@@ -1,7 +1,7 @@
 # text editing
 vim
 par
-emacs
+emacs24
 
 # text processors
 pandoc
@@ -10,7 +10,6 @@ pandoc
 git
 gitk
 build-essential
-postrgresql-9.3
 phantomjs
 nginx
 redis-server
