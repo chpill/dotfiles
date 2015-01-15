@@ -63,4 +63,4 @@ export PATH=$PATH:$HOME/go/bin
 
 # Node
 export NODE_PATH=/usr/lib/nodejs:/usr/lib/node_modules:/usr/share/javascript:/home/chpill/lib/node_modules
-source ~/.nvm/nvm.sh
+source $HOME/dotfiles/dev/nvm/nvm.sh

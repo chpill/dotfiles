@@ -10,3 +10,12 @@
 [submodule "tools/xcape"]
 	path = tools/xcape
 	url = https://github.com/alols/xcape
+[submodule "dev/rbenv"]
+	path = dev/rbenv
+	url = https://github.com/sstephenson/rbenv
+[submodule "dev/ruby-build"]
+	path = dev/ruby-build
+	url = https://github.com/sstephenson/ruby-build
+[submodule "dev/nvm"]
+	path = dev/nvm
+	url = https://github.com/creationix/nvm
