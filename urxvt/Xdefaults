@@ -1,0 +1,44 @@
+!General
+urxvt*termName: rxvt-unicode-256color
+urxvt*loginShell:         true
+urxvt*scrollBar:         false
+urxvt*secondaryScroll:    true
+urxvt*saveLines:         5000
+urxvt*cursorBlink:       false
+urxvt*urgentOnBell:       true
+urxvt*override-redirect:false
+urxvt*borderLess:       false
+urxvt*internalBorder:       0
+urxvt*externalBorder:       0
+
+! Extensions
+urxvt*perl-lib:        /usr/lib/urxvt/perl/:/home/chpill/dotfiles/urxvt/ext/
+urxvt*perl-ext-common: default,matcher,searchable-scrollback,font-size
+urxvt*urlLauncher:     /usr/bin/firefox
+urxvt*matcher.button:  1
+!  - catch ugly URLs
+urxvt.cutchars:        `()'*<>[]{|}"
+
+! binding for font-size plugin
+URxvt.keysym.C-plus:  perl:font-size:increase
+URxvt.keysym.C-minus: perl:font-size:decrease
+
+urxvt*font: xft:Inconsolata\-dz for Powerline:style=dzForPowerline:pixelsize=18
+
+! deactivate ss
+URxvt*iso14755: False
+! Appearance
+!  - use a bitmap font
+!urxvt*font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+!urxvt*boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+!  - use xft for drawing fonts
+!urxvt*font:       xft:Terminus:8
+!  - cursor
+urxvt*cursorColor: #DCDCCC
+!  - pseudo transparency
+!urxvt*shading:    50
+!urxvt*transparent:true
+!
+!  - color scheme
+urxvt.background:  #101010
+urxvt.foreground:  #EBEBFF

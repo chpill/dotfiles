@@ -15,9 +15,11 @@ nginx
 redis-server
 
 # base
+xorg
 awesome
 alsa-base
 gnome-settings-daemon
+rxvt-unicode-256color
 zsh
 
 # to check / edit system configuration
@@ -33,7 +35,7 @@ hplip
 
 # others
 firefox
-rxvt-unicode
+iceweasel
 google-chrome-beta
 pidgin
 

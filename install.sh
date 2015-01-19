@@ -7,6 +7,11 @@ DOT_PATH= $HOME/dotfiles
 
 cd DOT_PATH
 
+
+echo "\033[0;34mSetting .Xdefaults for urxvt"
+ln -s $(pwd)/urxvt/Xdefaults $HOME/.Xdefaults
+
+
 echo "\033[0;34mInstalling vim..."
 git submodule update --init --recursive -- vimfiles
 ln -s $(pwd)/vimfiles/vimrc $HOME/.vimrc

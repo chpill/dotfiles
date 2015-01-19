@@ -19,3 +19,6 @@
 [submodule "dev/nvm"]
 	path = dev/nvm
 	url = https://github.com/creationix/nvm
+[submodule "urxvt/font-size"]
+	path = urxvt/font-size
+	url = https://github.com/majutsushi/urxvt-font-size
