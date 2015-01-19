@@ -26,7 +26,7 @@ zsh
 arandr
 htop
 nmap
-wicd
+wicd-gtk
 alsa-utils
 
 # printer & scanners
@@ -34,8 +34,8 @@ cups
 hplip
 
 # others
-firefox
-iceweasel
+firefox # for ubuntu
+iceweasel # for debian
 google-chrome-beta
 pidgin
 
@@ -45,7 +45,7 @@ tree
 cowsay
 curl
 jq
-suckless-tools
+suckless-tools # gives slock
 silversearcher-ag
 sshfs
 tmux

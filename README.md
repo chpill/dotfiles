@@ -23,7 +23,7 @@ dpkg --get-selections > previously_installed_packages
 
 Simulate the installation of the packages on your system:
 ```sh
-aptitude --simulate install $(sed '/#/d' package_list)
+aptitude --simulate install $(awk 'NF && !/^#/ {print $1}' package_list)
 ```
 NB: Those packages are explicitly installed, so they will be
 considered as such by dpkg.
