@@ -45,7 +45,7 @@ alias e='emacsclient --tty\
 alias killemacs="emacsclient -e \"(progn (setq kill-emacs-hook 'nil) (kill-emacs))\""
 
 # PATH
-export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$HOME/dotfiles/shell_goodies
 
 export COFFEELINT_CONFIG=$HOME/dotfiles/coffeelint_config.json
 
