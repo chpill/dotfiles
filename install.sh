@@ -43,6 +43,7 @@ ln -s $(pwd)/tools/kbinit $HOME/bin
 
 echo "\033[0;34mInstalling nvm"
 git submodule update --init -- dev/nvm
+ln -s $(pwd)/dev/nvm $HOME/.nvm
 
 
 echo "\033[0;34mInstalling rbenv"
