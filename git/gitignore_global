@@ -4,7 +4,8 @@
 pom.xml
 pom.xml.asc
 *jar
-/lib/
+# this is very strange
+# /lib/
 /classes/
 /target/
 /checkouts/
@@ -57,4 +58,7 @@ tramp
 
 # cask packages
 .cask/
+
+# tern (js repl)
+.tern-port
 

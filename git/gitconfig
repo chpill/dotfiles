@@ -2,8 +2,18 @@
 
 [diff]
   color = true
+  submodule = log
 
 [alias]
+  ec = config --global -e
+  up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+  wip = !git add -u && git commit -nm "WIP"
+
+  wipe = !git add -A && git commit -qnm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+  bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+  bdone = "!f() { git checkout ${1-master} && git up && git bclean ${1-master}; }; f"
+
+
   ; shortcuts
   st  = status
   a   = add
@@ -24,7 +34,8 @@
   cpk = cherry-pick
 
   d   = diff
-  ds  = diff --staged
+  dsg  = diff --staged
+  dst  = diff --stat
   wd  = diff --word-diff
 
   ; log aliases
@@ -130,7 +141,7 @@
   excludesfile = ~/dotfiles/git/gitignore_global
 
 [push]
-  default = tracking
+  default = current
 
 [branch]
   ; When a new branch is created with git branch or git checkout that tracks
@@ -159,4 +170,9 @@
   stat = true
 
 [web]
-  browser = google-chrome
+  browser = firefox
+
+[status]
+  submodulesummary = true
+[remote "origin"]
+	fetch = +refs/pull/*/head:refs/remotes/origin/pr/*

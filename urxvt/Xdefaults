@@ -13,7 +13,7 @@ urxvt*externalBorder:       0
 
 ! Extensions
 urxvt*perl-lib:        /usr/lib/urxvt/perl/:/home/chpill/dotfiles/urxvt/ext/
-urxvt*perl-ext-common: default,matcher,searchable-scrollback,font-size
+urxvt*perl-ext-common: default,matcher,searchable-scrollback,font-size, clipboard
 urxvt*urlLauncher:     /usr/bin/firefox
 urxvt*matcher.button:  1
 !  - catch ugly URLs
